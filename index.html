@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <p id="studentInfo"></p>
+
+    <label for="studentName">Student Name:</label>
+    <input
+      type="text"
+      id="studentName"
+      placeholder="Enter your name"
+      required
+    />
+
+    <label for="studentNumber">Student Number:</label>
+    <input
+      type="text"
+      id="studentNumber"
+      placeholder="Enter your student number"
+      required
+    />
+
+    <form id="pizzaOrderForm">
+      <label for="size">Size:</label>
+      <select id="size" required>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xlarge">X-Large</option>
+      </select>
+
+      <label for="crust">Crust:</label>
+      <input type="radio" id="thin" name="crust" value="thin" required />Thin
+      <input type="radio" id="thick" name="crust" value="thick" />Thick
+      <input type="radio" id="regular" name="crust" value="regular" />Regular
+
+      <label for="sauce">Base Sauce:</label>
+      <input
+        type="radio"
+        id="tomato"
+        name="sauce"
+        value="tomato"
+        required
+      />Tomato Sauce <input type="radio" id="bbq" name="sauce" value="bbq" />BBQ
+      Sauce
+
+      <label for="sauce">Cheese:</label>
+      <input
+        type="radio"
+        id="mozzarella"
+        name="cheese"
+        value="mozzarella"
+        required
+      />Mozzarella
+      <input type="radio" id="cheddar" name="cheese" value="cheddar" />Cheddar
+
+      <label>Toppings:</label>
+      <input
+        type="checkbox"
+        id="pepperoni"
+        name="topping"
+        value="pepperoni"
+      />Pepperoni
+      <input
+        type="checkbox"
+        id="greenpeppers"
+        name="topping"
+        value="greenpeppers"
+      />Green Peppers
+      <input
+        type="checkbox"
+        id="chicken"
+        name="topping"
+        value="chicken"
+      />Chicken
+      <input type="checkbox" id="redonion" name="topping" value="redonion" />Red
+      Onion
+      <input
+        type="checkbox"
+        id="pinapple"
+        name="topping"
+        value="pineapple"
+      />Pineapple
+      <input
+        type="checkbox"
+        id="blackolives"
+        name="topping"
+        value="blackolives"
+      />Black Olives
+      <input
+        type="checkbox"
+        id="greenolives"
+        name="topping"
+        value="greenolives"
+      />Green Olives
+
+      <label for="crust">Special Instructions:</label>
+      <input
+        type="radio"
+        id="regular"
+        name="instruction"
+        value="regular"
+        required
+      />Regular
+      <input
+        type="radio"
+        id="welldone"
+        name="instruction"
+        value="welldone"
+      />Well Done
+
+      <button type="button" id="orderButton">Order</button>
+    </form>
+
+    <div id="orderDescription"></div>
+  </body>
+</html>
